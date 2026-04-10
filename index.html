@@ -803,5 +803,24 @@ function drawQr(){
 }
 drawQr();
 </script>
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>My App</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <!-- your app content here -->
+
+  <!-- Add this at the bottom -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+</body>
+</html>
+
 </body>
 </html>
